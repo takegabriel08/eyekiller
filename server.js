@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
 const options = {
   from: "gabriel.tache.auto22@outlook.com",
   to: "takegabriel08@gmail.com",
-  subject: "Eyekiller contact form mail",
-  text: "test",
+  subject: "Eyekiller contact form mail + ",
+  text: "test + ",
 };
 
 const portNumber = 3000;
@@ -41,7 +41,7 @@ app.get("/api", (request, response) => {
 });
 
 app.post("/api", (request, response) => {
-  console.log("I got a post!");
+  console.log("I got a post from Client side!");
   console.log(request.body);
   const data = request.body;
   const timestamp = Date.now();
@@ -49,11 +49,15 @@ app.post("/api", (request, response) => {
   database.insert(data);
   response.json(data);
 
-  // transporter.sendMail(options, (err, info) => {
-  //   if (err) {
-  //     return err;
-  //   } else {
-  //     return console.log("Email successfully sent: " + info.response);
-  //   }
-  // });
+  options.subject = options.subject + data.nick;
+  options.text = options.text + data.msgTxt;
+  console.log(JSON.stringify(options));
+
+  transporter.sendMail(options, (err, info) => {
+    if (err) {
+      console.log(err);
+    } else {
+      return console.log("Email successfully sent: " + info);
+    }
+  });
 });

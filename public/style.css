@@ -71,3 +71,51 @@
 #btnNo {
   position: relative;
 }
+
+#contact-form {
+  height: 25em;
+  width: 30em;
+  background-color: darkgrey;
+  border-radius: 10px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#contact-input {
+  height: 2em;
+  width: 75%;
+  color: blue;
+  border-radius: 5px;
+  background-color: cyan;
+}
+#contact-input::placeholder {
+  color: darkseagreen;
+  opacity: 2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#contact-body {
+  border-radius: 5px;
+  background-color: cyan;
+  height: 70%;
+  width: 75%;
+}
+#contact-btn {
+  height: 25px;
+  width: 150px;
+  border-radius: 3px;
+  border: 0px;
+  background-color: darkblue;
+  color: azure;
+}
+#contact-btn:hover {
+  height: 27px;
+  width: 155px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: azure;
+  color: darkblue;
+}

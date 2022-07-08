@@ -120,6 +120,7 @@
   color: darkblue;
 }
 #contact-success{
+  display: none;
   background-color: chartreuse;
   height: fit-content;
   width: fit-content;
@@ -135,7 +136,4 @@
 #contact-success:hover{
 background-color: aquamarine;
 font-size: 35px;
-}
-#contact-success {
-  display: none;
 }

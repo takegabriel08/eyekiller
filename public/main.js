@@ -241,7 +241,9 @@ var inputText = document.querySelector("input#inputText");
 var stupidText = document.querySelector("#stupid");
 var yesBtn = document.querySelector("#btnYes");
 var noBtn = document.querySelector("#btnNo");
+var contactForm = document.querySelector("#contact-form");
 var contactBtn = document.querySelector("#contact-btn");
+var contactSuccess = document.querySelector("#contact-success");
 var subject = document.querySelector("#contact-input");
 var message = document.querySelector("#contact-body");
 
@@ -332,4 +334,7 @@ contactBtn.addEventListener("click", async () => {
   const response = await fetch("/api", options);
   const responseJson = await response.json();
   console.log(responseJson);
+  // reset form for another sending operation
+  contactForm.style.display = "none";
+  contactSuccess.style.display = "block";
 });

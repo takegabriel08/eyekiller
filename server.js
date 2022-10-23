@@ -61,7 +61,7 @@ app.post("/api", (request, response) => {
     if (err) {
       console.log(err);
     } else {
-      return console.log("Email successfully sent: " + info);
+      return console.log("Email successfully sent: " + JSON.stringify(info));
     }
   });
 });

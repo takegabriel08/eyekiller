@@ -3,6 +3,10 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 const Datastore = require("nedb");
+require('dotenv').config()
+console.log(process.env)
+// console.log(`THIS IS PROCESS DOT ENV: ${JSON.stringify(process.env)}`)
+
 
 const transporter = nodemailer.createTransport({
   service: "hotmail",

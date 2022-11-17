@@ -11,14 +11,14 @@ console.log(process.env)
 const transporter = nodemailer.createTransport({
   service: "hotmail",
   auth: {
-    user: "gabriel.tache.auto22@outlook.com",
+    user: process.env.emailAddress,
     pass: process.env.mailPassword,
   },
 });
 
 const options = {
-  from: "gabriel.tache.auto22@outlook.com",
-  to: "takegabriel08@gmail.com",
+  from: process.env.emailAddress,
+  to: process.env.sendToAddress,
   subject: "Eyekiller contact form mail + ",
   text: "test + ",
 };

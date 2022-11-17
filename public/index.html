@@ -17,32 +17,35 @@
   <body>
     <div class="container">
       <div id="top">
-        <h1 id="change">Something here</h1>
+        <h1 id="change">Type something and play</h1>
       </div>
       <div id="bottom">
         <div id="form">
-          <input type="text" id="inputText" />
-          <input type="submit" id="btn" value="Change Text" />
-          <input type="submit" id="btn2" value="Change Text Color" />
-          <input type="submit" id="btn3" value="Change Text Style" />
+          <div class="input-group">
+            <input class="form-control" aria-label="With textarea" id="inputText" />
+          </div>
+          <input type="submit" id="btn" value="Change Text" class="btn btn-danger"/>
+          <input type="submit" id="btn2" value="Change Text Color" class="btn btn-secondary"/>
+          <input type="submit" id="btn3" value="Change Text Style" class="btn btn-info"/>
         </div>
       </div>
       <div id="question">
         <h1 id="stupid">Are you single?</h1>
         <div id="options">
-          <input type="submit" id="btnYes" value="Yes" />
-          <input type="submit" id="btnNo" value="No" />
+          <input type="submit" id="btnYes" value="Yes" class="btn btn-outline-success btn-sm"/>
+          <input type="submit" id="btnNo" value="No" class="btn btn-outline-danger btn-sm"/>
         </div>
       </div>
       <div class="contact">
-        <div id="contact-form">
-          <input type="text" placeholder="Name" id="contact-input" />
+        <div id="contact-form" class="input-group">
+          <input type="text" class="form-control" placeholder="Name" id="contact-input" />
           <textarea
             name=""
             placeholder="Tell me what I should implement next here..."
             id="contact-body"
             cols="30"
             rows="10"
+            class="form-control"
           ></textarea>
           <input type="submit" id="contact-btn" value="Send" />
         </div>

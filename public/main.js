@@ -235,7 +235,7 @@ const positions = ["right", "bottom", "top"];
 
 var text = document.querySelector("#change");
 var btn2 = document.querySelector("#btn2");
-var changeTextStyle = document.querySelector("#btn3");
+var btn3 = document.querySelector("#btn3");
 var container = document.querySelector(".container");
 var inputText = document.querySelector("input#inputText");
 var stupidText = document.querySelector("#stupid");
@@ -308,6 +308,7 @@ btn3.addEventListener("click", onClickFont);
 container.addEventListener("mouseover", onMouseover);
 
 inputText.addEventListener("mouseover", onMouseover);
+
 
 yesBtn.addEventListener("click", () => {
   yesBtn.style.display = "none";

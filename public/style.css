@@ -5,6 +5,7 @@
   width: 100vw;
   overflow: auto;
   flex-direction: column;
+  padding-bottom: 10%;
 }
 
 #top {

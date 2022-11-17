@@ -1,2 +1,2 @@
 # eyekiller
-My first web app, made to kill your eyes.
+An application made for eyekilling and also sendng simple emails with nodemailer

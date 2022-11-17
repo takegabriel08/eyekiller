@@ -311,10 +311,10 @@ inputText.addEventListener("mouseover", onMouseover);
 
 yesBtn.addEventListener("click", () => {
   yesBtn.style.display = "none";
-  stupidText.innerText = "I FKN KNEW IT!!!";
+  stupidText.innerText = "Give me your number!";
   setTimeout(() => {
     yesBtn.style.display = "block";
-    stupidText.innerText = "Are you dumb?";
+    stupidText.innerText = "Are you single?";
   }, 5000);
 });
 
